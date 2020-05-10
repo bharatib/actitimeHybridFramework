@@ -72,7 +72,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 		return selectProjectDropdown.isDisplayed();
 	}
 
-	public void selectProject(int index) {
+	/*public void selectProject(int index) {
 		Select selectProject = new Select(selectProjectDropdown);
 		
 		selectProjectDropdown.click();
@@ -81,7 +81,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 		selectProject.selectByIndex(index);
 
 	}
-
+*/
 	public boolean isDisplayedcreateCustomerbtn() {
 		return createCustomerbtn.isDisplayed();
 	}

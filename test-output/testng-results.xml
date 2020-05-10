@@ -1,67 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26687" started-at="2020-05-09T19:03:08 PDT" finished-at="2020-05-09T19:03:35 PDT">
+  <suite name="Default suite" duration-ms="26235" started-at="2020-05-10T16:43:19 PDT" finished-at="2020-05-10T16:43:45 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26687" started-at="2020-05-09T19:03:08 PDT" finished-at="2020-05-09T19:03:35 PDT">
+    <test name="Default test" duration-ms="26235" started-at="2020-05-10T16:43:19 PDT" finished-at="2020-05-10T16:43:45 PDT">
       <class name="com.qa.acttimeTestCases.ActiTimeCreateCutomerTest">
-        <test-method status="PASS" signature="preTest()[pri:0, instance:com.qa.acttimeTestCases.ActiTimeCreateCutomerTest@4493d195]" name="preTest" is-config="true" duration-ms="15622" started-at="2020-05-09T19:03:08 PDT" finished-at="2020-05-09T19:03:24 PDT">
+        <test-method status="PASS" signature="preTest()[pri:0, instance:com.qa.acttimeTestCases.ActiTimeCreateCutomerTest@2781e022]" name="preTest" is-config="true" duration-ms="14375" started-at="2020-05-10T16:43:19 PDT" finished-at="2020-05-10T16:43:33 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preTest -->
-        <test-method status="FAIL" signature="createCustomer()[pri:0, instance:com.qa.acttimeTestCases.ActiTimeCreateCutomerTest@4493d195]" name="createCustomer" duration-ms="10568" started-at="2020-05-09T19:03:24 PDT" finished-at="2020-05-09T19:03:34 PDT">
-          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
-            <message>
-              <![CDATA[Element should have been "select" but was "div"
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-UFNK8MN', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "div"
-Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'DESKTOP-UFNK8MN', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.<init>(Select.java:49)
-at com.qa.acttimePages.ActiTimeTaskListPage.selectProject(ActiTimeTaskListPage.java:76)
-at com.qa.acttimeTestCases.ActiTimeCreateCutomerTest.createCustomer(ActiTimeCreateCutomerTest.java:85)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+        <test-method status="PASS" signature="createCustomer()[pri:0, instance:com.qa.acttimeTestCases.ActiTimeCreateCutomerTest@2781e022]" name="createCustomer" duration-ms="7704" started-at="2020-05-10T16:43:33 PDT" finished-at="2020-05-10T16:43:41 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCustomer -->
-        <test-method status="PASS" signature="postTest()[pri:0, instance:com.qa.acttimeTestCases.ActiTimeCreateCutomerTest@4493d195]" name="postTest" is-config="true" duration-ms="428" started-at="2020-05-09T19:03:34 PDT" finished-at="2020-05-09T19:03:35 PDT">
+        <test-method status="PASS" signature="postTest()[pri:0, instance:com.qa.acttimeTestCases.ActiTimeCreateCutomerTest@2781e022]" name="postTest" is-config="true" duration-ms="4108" started-at="2020-05-10T16:43:41 PDT" finished-at="2020-05-10T16:43:45 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postTest -->

@@ -8,23 +8,8 @@ import org.testng.annotations.Test;
 import com.qa.acttimeBase.DriverScript;
 import com.qa.acttimePages.ActiTimeLoginPage;
 
-public class ActiLoginPageTest extends DriverScript{
+public class ActiLoginPageTest extends ActiBaseTest{
 	
-	ActiTimeLoginPage lp;
-	
-	public ActiLoginPageTest() {
-		super();
-	}
-	
-
-	
-	@BeforeMethod
-	public void preTest()
-	{
-		initApp();
-		lp = new ActiTimeLoginPage();
-		
-	}
 	
 	@Test(priority=1)
 	public void testVerifyActiLogo()
@@ -52,10 +37,5 @@ public class ActiLoginPageTest extends DriverScript{
 		lp.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	@AfterMethod
-	public void postTest()
-	{
-		driver.close();
-	}
-
+	
 }
