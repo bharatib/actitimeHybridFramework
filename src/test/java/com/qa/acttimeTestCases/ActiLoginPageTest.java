@@ -6,13 +6,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.acttimeBase.DriverScript;
-import com.qa.acttimePages.actiTimeLoginPage;
+import com.qa.acttimePages.ActiTimeLoginPage;
 
-public class actiLoginPageTest extends DriverScript{
+public class ActiLoginPageTest extends DriverScript{
 	
-	actiTimeLoginPage lp;
+	ActiTimeLoginPage lp;
 	
-	public actiLoginPageTest() {
+	public ActiLoginPageTest() {
 		super();
 	}
 	
@@ -22,7 +22,7 @@ public class actiLoginPageTest extends DriverScript{
 	public void preTest()
 	{
 		initApp();
-		lp = new actiTimeLoginPage();
+		lp = new ActiTimeLoginPage();
 		
 	}
 	

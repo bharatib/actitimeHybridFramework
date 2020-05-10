@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.qa.acttimeBase.DriverScript;
 
-public class actiTimeLoginPage extends DriverScript{
+public class ActiTimeLoginPage extends DriverScript{
 	
 	//**************************************Page Elements************************************************//
 	
@@ -16,7 +16,7 @@ public class actiTimeLoginPage extends DriverScript{
 	@FindBy(id = "loginButton") WebElement actiLoginbtn;
 
 	//**************************************Page Initialization************************************************//
-	public actiTimeLoginPage() {
+	public ActiTimeLoginPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
