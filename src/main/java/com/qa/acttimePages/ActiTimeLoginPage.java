@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.qa.actitimeUtilities.Common;
 import com.qa.acttimeBase.DriverScript;
 
 public class ActiTimeLoginPage extends DriverScript{
@@ -28,8 +29,11 @@ public class ActiTimeLoginPage extends DriverScript{
 	
 	public void validateLogin(String username, String password)
 	{
+		Common.highLightElement(actiuser);
 		actiuser.sendKeys(username);
+		Common.highLightElement(actipassword);
 		actipassword.sendKeys(password);
+		Common.highLightElement(actiLoginbtn);
 		actiLoginbtn.click();
 		
 	}

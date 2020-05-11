@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 
+import com.qa.actitimeUtilities.Common;
 import com.qa.acttimeBase.DriverScript;
 
 public class ActiEnterTimeTrackPage extends DriverScript{
@@ -27,12 +28,13 @@ public class ActiEnterTimeTrackPage extends DriverScript{
 	
 	public void verifyTaskMenuOption()
 	{
-		
+		Common.highLightElement(actiTaskMenuOption);
 		actiTaskMenuOption.click();
 	}
 	
 	public void verifyLogoutLink()
 	{
+		Common.highLightElement(actiLogoutLink);
 		actiLogoutLink.click();
 	}
 	

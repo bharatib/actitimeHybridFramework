@@ -50,7 +50,7 @@ public class ActiTimeCreateCutomerTest extends ActiBaseTest{
 		boolean custName=ttl.isDisplayedCustomerName();
 		System.out.println("Is Customer Name Displayed  :" + custName);
 				
-		ttl.enterCustomerName("TestcustomerName8");
+		ttl.enterCustomerName("TestcustomerName22");
 		
 		//Verify and enter customer description
 		boolean custdesc = ttl.isDisplayedcustomerDescTb();

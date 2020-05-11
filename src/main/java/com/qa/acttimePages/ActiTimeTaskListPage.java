@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.qa.actitimeUtilities.Common;
 import com.qa.acttimeBase.DriverScript;
 
 public class ActiTimeTaskListPage extends DriverScript {
@@ -33,6 +34,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 	}
 
 	public void clickonAddNewButton() {
+		Common.highLightElement(addNewTaskbtn);
 		addNewTaskbtn.click();
 	}
 
@@ -41,6 +43,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 	}
 
 	public void clickOnCreatNewCustomer() {
+		Common.highLightElement(createNewCustomer);
 		createNewCustomer.click();
 	}
 
@@ -57,6 +60,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 	}
 
 	public void enterCustomerName(String customerName) {
+		Common.highLightElement(customerNameTb);
 		customerNameTb.sendKeys(customerName);
 	}
 
@@ -65,6 +69,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 	}
 
 	public void enterCustomerDescription(String desc) {
+		Common.highLightElement(customerDescTb);
 		customerDescTb.sendKeys(desc);
 	}
 
@@ -87,6 +92,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 	}
 
 	public void createCutomerButton() {
+		Common.highLightElement(createCustomerbtn);
 		createCustomerbtn.click();
 	}
 }
