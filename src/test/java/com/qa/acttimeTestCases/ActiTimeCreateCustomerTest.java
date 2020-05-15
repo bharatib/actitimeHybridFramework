@@ -8,7 +8,7 @@ import com.qa.acttimePages.ActiEnterTimeTrackPage;
 import com.qa.acttimePages.ActiTimeLoginPage;
 import com.qa.acttimePages.ActiTimeTaskListPage;
 
-public class ActiTimeCreateCutomerTest extends ActiBaseTest{
+public class ActiTimeCreateCustomerTest extends ActiBaseTest{
 	
 			
 	@Test
