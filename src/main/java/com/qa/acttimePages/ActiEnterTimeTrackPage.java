@@ -5,8 +5,6 @@ package com.qa.acttimePages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 
 import com.qa.actitimeUtilities.Common;
 import com.qa.acttimeBase.DriverScript;

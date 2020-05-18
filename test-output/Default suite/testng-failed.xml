@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.acttimeTestCases.ActiTimeCreateCustomerTest">
+      <class name="com.qa.acttimeTestCases.ActiDeleteCustomer">
         <methods>
-          <include name="createCustomer"/>
+          <include name="DeleteCustomer"/>
           <include name="preTest"/>
           <include name="postTest"/>
         </methods>
-      </class> <!-- com.qa.acttimeTestCases.ActiTimeCreateCustomerTest -->
+      </class> <!-- com.qa.acttimeTestCases.ActiDeleteCustomer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -24,7 +24,20 @@ public class ActiTimeTaskListPage extends DriverScript {
 	WebElement selectProjectDropdown;
 	@FindBy(xpath = "//div[contains(text(),'Create Customer')]")
 	WebElement createCustomerbtn;
-
+	@FindBy(xpath = "//div[@class='header']//input[@placeholder='Start typing name ...']") 
+	WebElement SearchCustomerName;
+	@FindBy(xpath = "//div[@class='header']//div[@class='icon']") 
+	WebElement SearchBtn;
+	@FindBy(xpath = "//span[@class='highlightToken']") WebElement HighlightedCustomer;
+	@FindBy(xpath = "//div[@class='node customerNode editable selected']//div[@class='editButton']") 
+	WebElement EditBtn;
+	@FindBy(className="action") WebElement actionBtn;
+	@FindBy(xpath = "//div[@class='taskManagement_customerPanel']//div[@class='title'][contains(text(),'Delete')]") WebElement DeleteBtn;
+	@FindBy(xpath = "//span[contains(text(),'Delete permanently')]") 
+	WebElement DeletePermanentlyBtn;
+	
+	
+//Create Customer
 	public ActiTimeTaskListPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -94,5 +107,44 @@ public class ActiTimeTaskListPage extends DriverScript {
 	public void createCutomerButton() {
 		Common.highLightElement(createCustomerbtn);
 		createCustomerbtn.click();
+	}
+	//Search Existing Customer and Delete customer
+	public void EnterToSearchCustomer(String customer) {
+		Common.highLightElement(SearchCustomerName);
+		SearchCustomerName.sendKeys(customer);
+	}
+	
+	/*public void ClickSearchCustomer() {
+		Common.highLightElement(SearchBtn);
+		SearchBtn.click();
+	}*/
+	
+	public void ClickHighlightedCustomer() {
+		Common.highLightElement(HighlightedCustomer);
+		HighlightedCustomer.click();
+	}
+	
+	public void ClickOnEditButton() throws InterruptedException {
+		Common.highLightElement(EditBtn);
+		Thread.sleep(2000);
+		EditBtn.click();
+	}
+	
+	public void ClickOnActionBtn() throws InterruptedException{
+		Thread.sleep(2000);
+		Common.highLightElement(actionBtn);
+		actionBtn.click();
+	}
+	
+	public void ClickDeleteCustomerButton() throws InterruptedException {
+		Common.highLightElement(DeleteBtn);
+		Thread.sleep(2000);
+		DeleteBtn.click();
+	}
+	
+	public void ClickDeleteConfiramtionBtn() throws InterruptedException {
+		Common.highLightElement(DeletePermanentlyBtn);
+		Thread.sleep(2000);
+		DeletePermanentlyBtn.click();
 	}
 }
