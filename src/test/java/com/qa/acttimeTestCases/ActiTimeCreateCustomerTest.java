@@ -4,6 +4,7 @@ package com.qa.acttimeTestCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.qa.acttimePages.ActiEnterTimeTrackPage;
 import com.qa.acttimePages.ActiTimeLoginPage;
 import com.qa.acttimePages.ActiTimeTaskListPage;
@@ -14,7 +15,11 @@ public class ActiTimeCreateCustomerTest extends ActiBaseTest{
 	@Test
 	public void createCustomer() throws InterruptedException 
 	{
+		log =extent.createTest("Create Test under Task Menu");
 		lp.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
+		log.log(Status.PASS, "Login Sucessful");
+	//	Status status =log.getStatus();
+	//	System.out.println("Logged into Application  :  " + status);
 		String loginpgTitle=lp.verifyLoginTitle();
 		System.out.println(loginpgTitle);
 		Thread.sleep(1000);
