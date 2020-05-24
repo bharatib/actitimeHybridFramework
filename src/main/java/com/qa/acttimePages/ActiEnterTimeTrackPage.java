@@ -30,7 +30,7 @@ public class ActiEnterTimeTrackPage extends DriverScript{
 		actiTaskMenuOption.click();
 	}
 	
-	public void verifyLogoutLink()
+	public void CickOnLogoutLink()
 	{
 		Common.highLightElement(actiLogoutLink);
 		actiLogoutLink.click();

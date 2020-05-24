@@ -18,8 +18,6 @@ public class ActiTimeCreateCustomerTest extends ActiBaseTest{
 		log =extent.createTest("Create Test under Task Menu");
 		lp.validateLogin(prop.getProperty("username"), prop.getProperty("password"));
 		log.log(Status.PASS, "Login Sucessful");
-	//	Status status =log.getStatus();
-	//	System.out.println("Logged into Application  :  " + status);
 		String loginpgTitle=lp.verifyLoginTitle();
 		System.out.println(loginpgTitle);
 		Thread.sleep(1000);
@@ -64,9 +62,13 @@ public class ActiTimeCreateCustomerTest extends ActiBaseTest{
 		ttl.enterCustomerDescription("Test Customer Description");
 		
 		//Verify project dropdown field
-		boolean projectdropDown = ttl.isDisplayedselectProjectDropdown();
-		System.out.println("Is Project DropDown Displayed : " + projectdropDown);
+	//	boolean projectdropDown = ttl.isDisplayedselectProjectDropdown();
+	//	System.out.println("Is Project DropDown Displayed : " + projectdropDown);
 	//	ttl.selectProject(0);
+		
+		ttl.ClickOnProjectDropDown();
+		
+		ttl.SelectProject();
 						
 		//Verify and click on Create customer Button
 		boolean custbtn = ttl.isDisplayedcreateCustomerbtn();
