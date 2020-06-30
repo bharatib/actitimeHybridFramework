@@ -45,7 +45,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 	@FindBy(xpath = "//div[@class='item createNewProject']") WebElement CreateNewProject;
 	@FindBy(xpath = "//div[@class='sectionDetails']//input[@placeholder='Enter Project Name']") WebElement ProjectName;
 	@FindBy(xpath="//div[contains(@class,'customerSelectorPlaceholder selectorWithPlaceholderContainer notSelected')]//div[contains(@class,'dropdownButton')]") WebElement CustomerCombobox;
-	@FindBy(xpath="//div[contains(@class,'itemRow cpItemRow')][contains(text(),'Big Bang Company')]") WebElement SelectCustomer;
+	@FindBy(xpath="//div[contains(@class,'itemRow cpItemRow')][contains(text(),'Big Bang Company')]") WebElement SelectCustomerForProject;
 	@FindBy(xpath="//textarea[@placeholder='Add Project Description']") WebElement ProjectDescription;
 	@FindBy(xpath="//div[@id='createProjectPopup']//tr[1]//td[1]//input[1]") WebElement EnterTaskone;
 	@FindBy(id="descriptionElement") WebElement TaskDescbtn;
@@ -57,6 +57,23 @@ public class ActiTimeTaskListPage extends DriverScript {
 	WebElement TypeOfWork;
 	@FindBy(xpath="//tr[1]//td[5]//div[1]//div[1]//div[1]//div[1]//div[1]//div[11]//div[1]") WebElement SelectTypeOfWork;
 	@FindBy(xpath="//div[contains(text(),'Create Project')]") WebElement CreateProjectBtn;
+
+//Create New Tasks
+	@FindBy(xpath="//div[@class='item createNewTasks']") WebElement CreateNewTasks;
+	@FindBy(xpath="//div[@class='customerSelector customerOrProjectSelector selectorWithPlaceholderContainer']//div[@class='dropdownButton']") WebElement Customer;
+	@FindBy(xpath="//div[contains(@class,'itemRow cpItemRow')][contains(text(),'Big Bang Company')]") WebElement SelectCustomerForTask;
+	@FindBy(xpath="//div[@class='tablePlaceholder']//tr[1]//td[1]//input[1]") WebElement EnterTaskName;
+	@FindBy(id ="descriptionElement") WebElement TaskDescription;
+	@FindBy(xpath ="//button[@id='ext-gen45']") WebElement SetDeadline;
+	@FindBy(id="ext-gen192") WebElement SelectDeadline;
+	@FindBy(xpath="//button[@id='ext-gen437']") WebElement SetToday;
+	@FindBy(id="ext-gen177") WebElement ClickOkButton;
+	@FindBy(xpath="//tr[1]//td[5]//div[1]//div[1]//div[1]//div[1]//div[1]//div[8]//div[1]") WebElement TaskTypeOfWork;
+	@FindBy(xpath="//tr[1]//td[6]//label[1]//span[2]") WebElement TaskCheckBox;
+	@FindBy(xpath="//div[contains(text(),'Create Tasks')]") WebElement CreateTask;
+	
+	
+	
 	
 //Create Customer
 	public ActiTimeTaskListPage() {
@@ -168,6 +185,7 @@ public class ActiTimeTaskListPage extends DriverScript {
 		Thread.sleep(2000);
 		DeletePermanentlyBtn.click();
 	}
+	
 	//Create Project
 	public void ClickOnNewProject() {
 		Common.highLightElement(CreateNewProject);
@@ -186,8 +204,8 @@ public class ActiTimeTaskListPage extends DriverScript {
 	
 	
 	public void SelectCustomer() {
-		Common.highLightElement(SelectCustomer);
-		SelectCustomer.click();
+		Common.highLightElement(SelectCustomerForProject);
+		SelectCustomerForProject.click();
 	}
 	
 	public void EnterProjectDesc(String ProjectDesc) {
@@ -242,4 +260,49 @@ public class ActiTimeTaskListPage extends DriverScript {
 		
 	}
 	
+//Create Task
+	public void ClickOnCreateNewTasks() {
+		Common.highLightElement(CreateNewTasks);
+		CreateNewTasks.click();
+	}
+	
+	public void SelectCustomerForTask() {
+		Common.highLightElement(SelectCustomerForTask);
+		SelectCustomerForTask.click();
+	}
+	
+	public void EnterTaskName() {
+		Common.highLightElement(EnterTaskName);
+		EnterTaskName.sendKeys("Task1");
+	}
+	
+	public void EnterTaskDescription() {
+		Common.highLightElement(TaskDescription);
+		TaskDescription.sendKeys("Task1 Description");
+	}
+	
+	public void SetDeadLine() {
+		Common.highLightElement(SetDeadline);
+		SetDeadline.click();
+	}
+	
+	public void SetToday() {
+		Common.highLightElement(SetToday);
+		SetToday.click();
+	}
+	
+	public void SelectTaskTypeOfWork() {
+		Common.highLightElement(TaskTypeOfWork);
+		TaskTypeOfWork.click();
+	}
+	
+	public void SelectCheckbox() {
+		Common.highLightElement(TaskCheckBox);
+		TaskCheckBox.click();
+	}
+	
+	public void ClickOnCreateTask() {
+		Common.highLightElement(CreateTask);
+		CreateTask.click();
+	}
 }

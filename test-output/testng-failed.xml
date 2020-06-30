@@ -3,14 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.acttimeTestCases.ActiTimeCreateProject">
+      <class name="com.qa.acttimeTestCases.ActiLoginPageTest">
         <methods>
-          <include name="CreateProject"/>
+          <include name="testVerifyLoginPageTitle"/>
           <include name="preTest"/>
           <include name="postTest"/>
+          <include name="testVerifyActiLogo"/>
+          <include name="testValidateLoginFunction"/>
           <include name="PreClass"/>
         </methods>
-      </class> <!-- com.qa.acttimeTestCases.ActiTimeCreateProject -->
+      </class> <!-- com.qa.acttimeTestCases.ActiLoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

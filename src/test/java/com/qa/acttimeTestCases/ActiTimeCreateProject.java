@@ -30,7 +30,7 @@ public class ActiTimeCreateProject extends ActiBaseTest{
 		
 		ttl.clickonAddNewButton();
 		ttl.ClickOnNewProject();
-		ttl.EnterProjectName("iTop Project");
+		ttl.EnterProjectName("CRS Project");
 		ttl.ClickOnCustomerComboBox();
 		ttl.SelectCustomer();
 		ttl.EnterProjectDesc("This is Bharati's first procject");

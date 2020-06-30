@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\bhara\git\repository"/>
+			<item value="C:\Bharati\projects\GIT-NEW"/>
 			<item value="C:\Bharati\projects\com.qa.acttimehybridFramework"/>
 		</list>
 		<list key="projectNameTemplate">

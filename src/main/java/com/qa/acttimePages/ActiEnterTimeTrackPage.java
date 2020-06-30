@@ -30,8 +30,9 @@ public class ActiEnterTimeTrackPage extends DriverScript{
 		actiTaskMenuOption.click();
 	}
 	
-	public void CickOnLogoutLink()
+	public void CickOnLogoutLink() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		Common.highLightElement(actiLogoutLink);
 		actiLogoutLink.click();
 	}
